@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Welldone!</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+    <div class="container">
+        <div id="end" class="flex-center flex-column">
+            <h1 id="finalScore"></h1>
+            <p id="message"></p>
+            <form>
+                <input type="text"
+                name="username"
+                id="username"
+                placeholder="username">
+                <button
+                type="submit"
+                class="btn"
+                id="saveScoreBtn"
+                onclick="saveHighScore(event)"
+                disabled>
+                Save
+            </button>
+            </form>
+            <a class="btn" href="game.html">Play Again</a>
+            <a class="btn" href="index.html">Home</a>
+        </div>
+    </div>
+    <script src="assets/javascirpt/end.js"></script>
+</body>
+</html>
