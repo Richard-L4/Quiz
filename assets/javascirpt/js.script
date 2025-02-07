@@ -12,24 +12,88 @@ let score = 0;
 
 let questions = [
 {
-    question : "What is the head of a lorry called",
-    choice1: "Car",
-    choice2: "Van",
-    choice3: "Bus",
-    choice4: "Tractor unit",
+    question : "What does HTML stand for?",
+    choice1: "Hyper Trainer Marking Language",
+    choice2: "Hyper Text Markup Language",
+    choice3: "High Tech Modern Language",
+    choice4: "Home Tool Management Language",
+    answer: 2
+},
+{
+    question : "Which tag is used to create a hyperlink in HTML?",
+    choice1: "<link>",
+    choice2: "<href>",
+    choice3: "<a>",
+    choice4: "<h1>",
+    answer: 3
+},
+{
+    question : "Which of the following is NOT a valid CSS unit?",
+    choice1: "px",
+    choice2: "em",
+    choice3: "cm",
+    choice4: "doc",
     answer: 4
 },
 {
-    question : "Scotland is part of which land mass?",
-    choice1: "United Kingdom",
-    choice2: "Europe",
-    choice3: "Asia",
-    choice4: "North America",
+    question : "How do you apply an external CSS file to an HTML document?",
+    choice1: "<style src='style.css'>",
+    choice2: "<css>style.css</css>",
+    choice3: "<link rel='stylesheet' href='style.css>",
+    choice4: "<script src='style.css'></script>",
+    answer: 3
+},
+{
+    question : "Which of these JavaScript keywords is used to declare a variable?",
+    choice1: "var",
+    choice2: "let",
+    choice3: "const",
+    choice4: "All of the above",
+    answer: 4
+},
+{
+    question : "What is the purpose of the z-index property in CSS?",
+    choice1: "To change the size of text",
+    choice2: "To control the stacking order of elements",
+    choice3: "To set the transparency of an element",
+    choice4: "To add a border around an element",
+    answer: 2
+},
+{
+    question : "Which symbol is used for single-line comments in JavaScript?",
+    choice1: "<!-- -->",
+    choice2: "//",
+    choice3: "/* */",
+    choice4: "##",
+    answer: 2
+},
+{
+    question : "What will console.log(typeof 42); output?",
+    choice1: "number",
+    choice2: "string",
+    choice3: "integer",
+    choice4: "variable",
+    answer: 1
+},
+{
+    question : "What is the default position of an HTML element in CSS?",
+    choice1: "absolute",
+    choice2: "fixed",
+    choice3: "relative",
+    choice4: "static",
+    answer: 4
+},
+{
+    question : "Which JavaScript function is used to select an element by its ID?",
+    choice1: "getElementById()",
+    choice2: "querySelectorAll()",
+    choice3: "getElementByClass()",
+    choice4: "selectElementById()",
     answer: 1
 }
 ];
 
-const MAX_QUESTIONS =2;
+const MAX_QUESTIONS = 10;
 
 startGame = () => {
     questionCounter = 0;
