@@ -28,7 +28,7 @@ function displayFinalScore() {
         } else if (finalScore >= 6 && finalScore <= 8) {
             messageElement.innerText = "Getting there, keep it up";
         } else if (finalScore >= 8 || finalScore === 9) {
-            messageElement.innerText = "Well done, you know your subjuct!";
+            messageElement.innerText = "Well done, you know your subject!";
         } else if (finalScore === 10) {
             messageElement.innerTExt = "Expert!";
         } else {
