@@ -27,10 +27,12 @@ function displayFinalScore() {
             messageElement.innerText = "Not bad, you're on the right track";
         } else if (finalScore >= 6 && finalScore <= 8) {
             messageElement.innerText = "Getting there, keep it up";
-        } else if (finalScore >= 8 || finalScore === 9) {
+        } else if (finalScore >= 8 && finalScore <= 9) {
             messageElement.innerText = "Well done, you know your subject!";
         } else if (finalScore === 10) {
-            messageElement.innerTExt = "Expert!";
+            messageElement.innerText = "Expert!";
+            document.documentElement.style.setProperty('background-color', 'rgba(50, 205, 50)'
+        );
         } else {
             messageElement.innerText = "Oops, something went wrong."
         }
