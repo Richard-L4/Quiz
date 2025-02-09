@@ -46,11 +46,7 @@
 }
 
 
-/*.progress-item {
-    display: flex;
-    justify-content: space-between;
-}
-*/
+
 .progress-prefix {
     text-align: center;
     font-size: 2.5rem;
