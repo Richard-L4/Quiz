@@ -34,7 +34,7 @@ function displayFinalScore() {
             document.documentElement.style.setProperty('background-color', 'rgba(50, 205, 50)'
         );
         } else {
-            messageElement.innerText = "Oops, something went wrong."
+            messageElement.innerText = "Oops, something went wrong.";
         }
         
 
@@ -61,7 +61,7 @@ saveTopScore = e => {
     };
     topScores.push(score);
 
-    topScores.sort((a,b) => b.score - a.score)
+    topScores.sort((a,b) => b.score - a.score);
 
     topScores.splice(5);
 

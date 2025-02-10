@@ -116,7 +116,7 @@ getNewQuestion = () => {
     question.innerText = currentQuestion.question;
 
     choices.forEach(choice => {
-        const number = choice.dataset["number"];
+        const number = choice.dataset.number;
         choice.innerText = currentQuestion["choice" + number];
     });
 
@@ -129,12 +129,12 @@ getNewQuestion = () => {
         if (!acceptingAnswers) return;
         acceptingAnswers = false;
         const selectedChoice = e.target;
-        const selectedAnswer = selectedChoice.dataset["number"];
+        const selectedAnswer = selectedChoice.dataset.number;
 
         const classToApply = selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
 
         if (classToApply === "correct") {
-            incrementScore(1)
+            incrementScore(1);
         }
 
         selectedChoice.parentElement.classList.add(classToApply);
@@ -149,10 +149,10 @@ getNewQuestion = () => {
     });
 });
 
-incrementScore = num => {
+    incrementScore = num => {
     score += num;
     scoreText.innerText = score;
-}
+};
 
 
 
