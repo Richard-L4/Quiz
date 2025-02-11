@@ -39,7 +39,7 @@ let questions = [
     question : "How do you apply an external CSS file to an HTML document?",
     choice1: "<style src='style.css'>",
     choice2: "<css>style.css</css>",
-    choice3: "<link rel='stylesheet' href='style.css>",
+    choice3: "<link rel='stylesheet' href='style.css'>",
     choice4: "<script src='style.css'></script>",
     answer: 3
 },
@@ -105,7 +105,7 @@ startGame = () => {
 getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem("mostRecentScore", score);
-        return document.location.assign("end.html");
+        return document.location.assign("final.html");
 
     }
     questionCounter++;
