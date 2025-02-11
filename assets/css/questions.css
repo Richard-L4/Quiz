@@ -1,6 +1,4 @@
-
-
-
+/* flex box styles for answers options*/
 .choice-container {
     display: flex;
     margin-bottom: 3rem;
@@ -10,19 +8,19 @@
     background-color: blanchedalmond;
     border-radius: 20px;
 }
-
+/*  styles for answers boxes on mouse hover */
 .choice-container:hover {
     cursor: pointer;
     box-shadow: 0 0.3rem 1.5rem 0 rgb(23, 23, 85);
     transform: translateY(-0.1rem);
     transition: transform 150ms;
 }
-
+/* padding within answer boxes and width for answer text*/
 .choice-text {
     padding: 2rem;
     width: 100%;
 }
-
+/*  correct and incorrect answer colors*/
 .correct {
     background-color: rgb(38, 171, 38);
 }
@@ -30,7 +28,7 @@
 .incorrect {
     background-color: rgb(190, 18, 18);
 }
-
+/*  style id for question number and score*/
 #progress {
     display: flex;
     justify-content: space-between;
@@ -55,7 +53,7 @@
 .progress-main-text {
     text-align: center;
 }
-
+/*  style id's for progress bar */
 #progressBar {
     width: 18rem;
     height: 5rem;
@@ -74,8 +72,8 @@
 
 @media screen and (max-height: 480px) {
     #question {
-        font-size: 1.5rem; /* Adjust as needed */
-        padding-top: 5px; /* Reduce top padding */
+        font-size: 1.5rem; 
+        padding-top: 5px; 
     }
 
     
