@@ -1,3 +1,5 @@
+// constants to allow the DOM to access info from html
+
 const username = document.getElementById("username");
 const saveScoreBtn = document.getElementById("saveScoreBtn");
 const finalScoreElement = document.getElementById("finalScore");
@@ -7,12 +9,15 @@ const mostRecentScore = localStorage.getItem("mostRecentScore");
 const topScores = JSON.parse(localStorage.getItem("topScores")) || [];
 const MAX_HIGH_SCORES = 10;
 
-/*finalScore.innerText = mostRecentScore;*/
+// function to display final score 
+
 function displayFinalScore() {
     if (mostRecentScore !== null) {
         let finalScore = parseInt(mostRecentScore, 10);
 
         finalScoreElement.innerText = finalScore; // Display score
+
+        // if else statement to give feedback on amount of correct questions
 
         if (isNaN(finalScore)) {
             finalScore = 0; // Default to 0 if it's NaN
@@ -31,6 +36,9 @@ function displayFinalScore() {
             messageElement.innerText = "Well done, you know your subject!";
         } else if (finalScore === 10) {
             messageElement.innerText = "Expert!";
+
+            // allows background color of page to change to green if score is 10 / 10
+
             document.documentElement.style.setProperty('background-color', 'rgba(50, 205, 50)'
         );
         } else {
@@ -38,19 +46,23 @@ function displayFinalScore() {
         }
         
 
-        // Adjust message based on score
+        
         
     }
 }
 }
 
-// Call function when page loads
+// Call function when page loads using event listener and key up
 displayFinalScore();
 
 
 username.addEventListener("keyup", () => {
     saveScoreBtn.disabled = !username.value;
 });
+
+/*  function to save scores. const score key value pair , push , sort method to put scores in order
+ of highest to lowest , splice to delete any score beyond 5 most recent scores and local storage used to store
+ recent scores with JSON stringfy to return top scores and document re assign to return to home index page  */
 
 saveTopScore = e => {
     e.preventDefault();
@@ -65,6 +77,6 @@ saveTopScore = e => {
 
     topScores.splice(5);
 
-    localStorage.setItem("topScores", JSON.stringify(topScores));
+    localStorage.setItem("topScores", JSON.stringify(topScores)); //stringfy  to convert integer to string as local storage only holds strings
     return document.location.assign("index.html");
 };

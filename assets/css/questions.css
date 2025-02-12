@@ -69,7 +69,7 @@
     width: 0%;  
      
 }
-
+/* media query to allow questions to be clearly visible on small screens */
 @media screen and (max-height: 480px) {
     #question {
         font-size: 1.5rem; 

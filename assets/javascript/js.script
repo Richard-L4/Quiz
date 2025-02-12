@@ -1,3 +1,5 @@
+// constants to allow the DOM to access info from html
+
 const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choice-text"));
 const progressText = document.getElementById('progressText');
@@ -94,7 +96,7 @@ let questions = [
 ];
 
 const MAX_QUESTIONS = 10;
-
+// function to start game taking available questions from questions array 
 startGame = () => {
     questionCounter = 0;
     score = 0;
@@ -102,11 +104,13 @@ startGame = () => {
     getNewQuestion();
 };
 
+// function to check if questions bank has been used 
 getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem("mostRecentScore", score);
         return document.location.assign("final.html");
 
+// part of function to monitor progress and set random question allocator using math.floor 
     }
     questionCounter++;
     progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
@@ -114,6 +118,8 @@ getNewQuestion = () => {
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
     question.innerText = currentQuestion.question;
+
+// code to call next question using splice to prevent any question being re used 
 
     choices.forEach(choice => {
         const number = choice.dataset.number;
@@ -123,6 +129,8 @@ getNewQuestion = () => {
     availableQuestions.splice(questionIndex, 1);
     acceptingAnswers = true;
 };
+
+// section to to check and display answers incorrect or correct using event listeners and terinary operator
 
     choices.forEach(choice => {
     choice.addEventListener("click", e => {
@@ -138,6 +146,8 @@ getNewQuestion = () => {
         }
 
         selectedChoice.parentElement.classList.add(classToApply);
+
+// time out to allow slight delay from answer being selected to be confirmed
         
         setTimeout( () => {
             selectedChoice.parentElement.classList.remove(classToApply);
@@ -148,6 +158,8 @@ getNewQuestion = () => {
        
     });
 });
+
+// function to increment score 
 
     incrementScore = num => {
     score += num;

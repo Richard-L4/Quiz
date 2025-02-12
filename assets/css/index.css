@@ -25,10 +25,6 @@ h1 {
     margin-bottom: 5rem;
 }
 
-h1 > span {
-    font-size: 3rem;
-    font-weight: 400;
-}
 
 h2 {
     font-size: 3rem;
@@ -40,7 +36,7 @@ h3 {
     font-size: 3rem;
     font-weight: 500;
 }
-
+/*  dimensions for outer container of home page*/
 .container {
     width: 100vw;
     height: 100vh;
@@ -48,10 +44,10 @@ h3 {
     justify-content: center;
     align-items: center;
     max-width: 80rem;
-    margin: 170px auto;
+    margin: 170px auto;  /*  margin 170 px so that all info fits on screens as small as I phone 4 */
     padding: 2rem;
 }
-
+/*  dimensions and stylin for inner containers / boxes */
 .container > * {
     width: 100%;
 }
@@ -88,7 +84,7 @@ h3 {
     text-align: center;
     border: 0.2rem solid rgb(59, 59, 117);
     margin-bottom: 3rem;
-    text-decoration: none;
+    text-decoration: none;  
     color: rgb(59, 59, 117);
     background-color: rgb(234, 223, 223);
 }
@@ -105,7 +101,7 @@ h3 {
     box-shadow: none;
     transform: none;
 }
-
+/*  style for form box to enter user name for high scores */
 form {
     width: 100%;
     display: flex;
