@@ -36,14 +36,13 @@
 
 #progress-question,
 #progress-score {
-  #progress-question,
-  #progress-score {
+ 
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-}
+
 
 .progress-prefix {
   text-align: center;
