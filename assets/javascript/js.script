@@ -97,7 +97,7 @@ let questions = [
 
 const MAX_QUESTIONS = 10;
 // function to start game taking available questions from questions array 
-startGame = () => {
+const startGame = () => {
     questionCounter = 0;
     score = 0;
     availableQuestions = [...questions];
@@ -105,7 +105,7 @@ startGame = () => {
 };
 
 // function to check if questions bank has been used 
-getNewQuestion = () => {
+const getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem("mostRecentScore", score);
         return document.location.assign("final.html");
