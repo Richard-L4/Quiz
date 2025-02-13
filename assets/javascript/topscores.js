@@ -20,5 +20,5 @@ clearScoresBtn.addEventListener("click", () => {
 
     // alert to pop up like a bootstrap modal to let user know top scores cleared
 
-    alert("Top scores cleared!");
+    Swal.fire("Top scores cleared!");
 });
