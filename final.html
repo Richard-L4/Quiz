@@ -1,41 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--fav icon links-->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/favicon.ico"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
     <!--title for score result page-->
     <title>Computer Quiz - Final Score</title>
     <!--link to stylesheets-->
-    <link rel="stylesheet" href="assets/css/index.css">
-</head>
-<body>
+    <link rel="stylesheet" href="assets/css/index.css" />
+  </head>
+  <body>
     <!--container for flex styling of final score and review message-->
     <div class="container">
-        <div id="end" class="flex-center flex-column">
-            <h1 id="finalScore">0</h1>
-            <p id="message"></p>
-            <form>
-                <input type="text"
-                name="username"
-                id="username"
-                placeholder="username">
-                <button
-                type="submit"
-                class="btn"
-                id="saveScoreBtn">
-                Save
-            </button>
-            </form>
-            <!--links to either play game again or return to home page-->
-            <a class="btn" href="questions.html">Play Again</a>
-            <a class="btn" href="index.html">Home</a>
-        </div>
+      <div id="end" class="flex-center flex-column">
+        <h1 id="finalScore">0</h1>
+        <p id="message"></p>
+        <form>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="username"
+          />
+          <button type="submit" class="btn" id="saveScoreBtn">Save</button>
+        </form>
+        <!--links to either play game again or return to home page-->
+        <a class="btn" href="questions.html">Play Again</a>
+        <a class="btn" href="index.html">Home</a>
+      </div>
     </div>
     <script src="assets/javascript/score.js"></script>
-</body>
+  </body>
 </html>

@@ -1,61 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--fav icon links-->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/favicon.ico"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
     <!--title for questions page-->
     <title>Computer Quiz - Questions</title>
     <!--links to stylesheets-->
-    <link rel="stylesheet" href="assets/css/index.css">
-    <link rel="stylesheet" href="assets/css/questions.css">
-</head>
-<body>
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="stylesheet" href="assets/css/questions.css" />
+  </head>
+  <body>
     <!--container for flex styling for quesions and progress assets -->
     <div class="container">
-        <div id="game" class="justify-center flex-column">
-            <div id="progress">
-                <div id="progress-question">
-                    <p id="progressText" class="progress-prefix">
-                        Question
-                    </p>
-                    <div id="progressBar">
-                        <div id="progressBarFull"></div>
-                    </div>
-                </div>
-                <div id="progress-score">
-                    <p class="progress-prefix">
-                        Score
-                    </p>
-                    <h1 class="progress-main-text" id="score">
-                        0
-                    </h1>
-                </div>
+      <div id="game" class="justify-center flex-column">
+        <div id="progress">
+          <div id="progress-question">
+            <p id="progressText" class="progress-prefix">Question</p>
+            <div id="progressBar">
+              <div id="progressBarFull"></div>
             </div>
-            <!--container for answers options-->
-            <h2 id="question">What is the answer to this question?</h2>
-            <div class="choice-container">
-                <p class="choice-text" data-number="1">Choice 1</p>
-            </div>
-            <div class="choice-container">
-                <p class="choice-text" data-number="2">Choice 2</p>
-            </div>
-            <div class="choice-container">
-                <p class="choice-text" data-number="3">Choice 3</p>
-            </div>
-            <div class="choice-container">
-                <p class="choice-text" data-number="4">Choice 4</p>
-            </div>
-            <nav style="display: flex; flex-direction: column; align-items: center; gap: 0.625rem;">
-                <a class="btn" href="index.html">Home</a>
-            </nav>
-            
+          </div>
+          <div id="progress-score">
+            <p class="progress-prefix">Score</p>
+            <h1 class="progress-main-text" id="score">0</h1>
+          </div>
         </div>
+        <!--container for answers options-->
+        <h2 id="question">What is the answer to this question?</h2>
+        <div class="choice-container">
+          <p class="choice-text" data-number="1">Choice 1</p>
+        </div>
+        <div class="choice-container">
+          <p class="choice-text" data-number="2">Choice 2</p>
+        </div>
+        <div class="choice-container">
+          <p class="choice-text" data-number="3">Choice 3</p>
+        </div>
+        <div class="choice-container">
+          <p class="choice-text" data-number="4">Choice 4</p>
+        </div>
+        <nav
+          style="
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.625rem;
+          "
+        >
+          <a class="btn" href="index.html">Home</a>
+        </nav>
+      </div>
     </div>
     <script src="assets/javascript/questions.js"></script>
-</body>
+  </body>
 </html>

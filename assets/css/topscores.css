@@ -1,22 +1,22 @@
 /*  flex box for top scores*/
 #topScores {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 /*  styles to get rid of bullet points and create space around other syle assets*/
 #topScoresList {
-    list-style: none;
-    padding-left: 0;
-    margin-bottom: 5rem;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 5rem;
 }
 
 .top-score {
-    font-size: 2.5rem;
-    margin-bottom: 0.8rem;
+  font-size: 2.5rem;
+  margin-bottom: 0.8rem;
 }
 /* style to enhance visibility of top scores on hover */
 .top-score:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }

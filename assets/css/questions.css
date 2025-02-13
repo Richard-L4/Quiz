@@ -1,80 +1,77 @@
 /* flex box styles for answers options*/
 .choice-container {
-    display: flex;
-    margin-bottom: 3rem;
-    width: 100%;
-    font-size: 2rem;
-    border: 0.2rem solid rgb(41, 38, 38);
-    background-color: blanchedalmond;
-    border-radius: 20px;
+  display: flex;
+  margin-bottom: 3rem;
+  width: 100%;
+  font-size: 2rem;
+  border: 0.2rem solid rgb(41, 38, 38);
+  background-color: blanchedalmond;
+  border-radius: 20px;
 }
 /*  styles for answers boxes on mouse hover */
 .choice-container:hover {
-    cursor: pointer;
-    box-shadow: 0 0.3rem 1.5rem 0 rgb(23, 23, 85);
-    transform: translateY(-0.1rem);
-    transition: transform 150ms;
+  cursor: pointer;
+  box-shadow: 0 0.3rem 1.5rem 0 rgb(23, 23, 85);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
 }
 /* padding within answer boxes and width for answer text*/
 .choice-text {
-    padding: 2rem;
-    width: 100%;
+  padding: 2rem;
+  width: 100%;
 }
 /*  correct and incorrect answer colors*/
 .correct {
-    background-color: rgb(38, 171, 38);
+  background-color: rgb(38, 171, 38);
 }
 
 .incorrect {
-    background-color: rgb(190, 18, 18);
+  background-color: rgb(190, 18, 18);
 }
 /*  style id for question number and score*/
 #progress {
+  display: flex;
+  justify-content: space-between;
+}
+
+#progress-question,
+#progress-score {
+  #progress-question,
+  #progress-score {
+    flex: 1;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
 }
-
-#progress-question, #progress-score {
-    #progress-question, #progress-score {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-
 
 .progress-prefix {
-    text-align: center;
-    font-size: 2.5rem;
+  text-align: center;
+  font-size: 2.5rem;
 }
 
 .progress-main-text {
-    text-align: center;
+  text-align: center;
 }
 /*  style id's for progress bar */
 #progressBar {
-    width: 18rem;
-    height: 5rem;
-    border-radius: 20px;
-    border: 0.2rem solid  rgb(80, 22, 114);
-    margin-top: 1.4rem;
-    overflow: hidden;
+  width: 18rem;
+  height: 5rem;
+  border-radius: 20px;
+  border: 0.2rem solid rgb(80, 22, 114);
+  margin-top: 1.4rem;
+  overflow: hidden;
 }
 
 #progressBarFull {
-    height: 100%;
-    background-color: rgb(80, 22, 114); /* Progress bar fill color */
-    width: 0%;  
-     
+  height: 100%;
+  background-color: rgb(80, 22, 114); /* Progress bar fill color */
+  width: 0%;
 }
 /* media query to allow questions to be clearly visible on small screens */
 @media screen and (max-height: 480px) {
-    #question {
-        font-size: 1.5rem; 
-        padding-top: 5px; 
-    }
-
-    
+  #question {
+    font-size: 1.5rem;
+    padding-top: 5px;
+  }
 }
