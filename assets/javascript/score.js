@@ -1,7 +1,7 @@
 // constants to allow the DOM to access info from html
 
 const username = document.getElementById("username");
-const saveScoreBtn = document.getElementById("saveScoreBtn");
+const saveScoreBtn = document.querySelector("#saveScoreBtn");
 const finalScoreElement = document.getElementById("finalScore");
 const messageElement = document.getElementById("message");
 const mostRecentScore = localStorage.getItem("mostRecentScore");
@@ -64,6 +64,9 @@ username.addEventListener("keyup", () => {
  of highest to lowest , splice to delete any score beyond 5 most recent scores and local storage used to store
  recent scores with JSON stringfy to return top scores and document re assign to return to home index page  */
 
+ 
+
+
 saveTopScore = e => {
     e.preventDefault();
 
@@ -80,3 +83,7 @@ saveTopScore = e => {
     localStorage.setItem("topScores", JSON.stringify(topScores)); //stringfy  to convert integer to string as local storage only holds strings
     return document.location.assign("index.html");
 };
+
+// Attach event listener to save button
+
+saveScoreBtn.addEventListener("click", saveTopScore);
