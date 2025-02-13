@@ -60,7 +60,7 @@ username.addEventListener("keyup", () => {
  of highest to lowest , splice to delete any score beyond 5 most recent scores and local storage used to store
  recent scores with JSON stringfy to return top scores and document re assign to return to home index page  */
 
-saveTopScore = (e) => {
+const saveTopScore = (e) => {
   e.preventDefault();
 
   const score = {

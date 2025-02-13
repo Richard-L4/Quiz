@@ -161,7 +161,7 @@ choices.forEach((choice) => {
 
 // function to increment score
 
-incrementScore = (num) => {
+const incrementScore = (num) => {
   score += num;
   scoreText.innerText = score;
 };
