@@ -68,7 +68,7 @@ const saveTopScore = (e) => {
     name: username.value,
   };
   topScores.push(score);
-
+/*  this line  below :72 the .sort a,b => b.score - a.score was taken directly from you tube video (see readme) */
   topScores.sort((a, b) => b.score - a.score);
 
   topScores.splice(5);
