@@ -1,4 +1,5 @@
 # Quiz
+This project is a simple quiz with ten randomly generated questions. Questions advance automatically, leading to a final score page where players can enter their name. The layout is optimized for small screens, with four clear answer choices, a question tracker, a score counter, and a fun progress bar. The home page features buttons to start the game or view the top five recent scores, which can be deleted if desired. Players can return to the home page from any page, ensuring a smooth user experience, especially if they want to restart the quiz.
 
 ![Alt text](assets/images/Screenshot%202025-02-16%20213411.png)
 
