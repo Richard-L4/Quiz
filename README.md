@@ -1,4 +1,7 @@
 # Quiz
+
+![Alt text](assets/images/Screenshot%202025-02-16%20213411.png)
+
 # UX Design – Five Planes
 
 This project follows **Jesse James Garrett’s Five Planes of UX Design** to create a structured and engaging quiz experience.
