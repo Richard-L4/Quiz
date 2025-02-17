@@ -1,18 +1,18 @@
 // constants to allow the DOM to access info from html
 
-const username = document.getElementById("username");
+const player = document.getElementById("player");
 const saveScoreBtn = document.querySelector("#saveScoreBtn");
 const finalScoreElement = document.getElementById("finalScore");
 const messageElement = document.getElementById("message");
-const mostRecentScore = localStorage.getItem("mostRecentScore");
+const latestScore = localStorage.getItem("latestScore");
 
 const topScores = JSON.parse(localStorage.getItem("topScores")) || [];
 
 // function to display final score
 
 function displayFinalScore() {
-  if (mostRecentScore !== null) {
-    let finalScore = parseInt(mostRecentScore, 10);
+  if (latestScore !== null) {
+    let finalScore = parseInt(latestScore, 10);
 
     finalScoreElement.innerText = finalScore; // Display score
 
@@ -51,8 +51,8 @@ function displayFinalScore() {
 // Call function when page loads using event listener and key up
 displayFinalScore();
 
-username.addEventListener("keyup", () => {
-  saveScoreBtn.disabled = !username.value;
+player.addEventListener("keyup", () => {
+  saveScoreBtn.disabled = !player.value;
 });
 
 /*  function to save scores. const score key value pair , push , sort method to put scores in order
@@ -63,8 +63,8 @@ const saveTopScore = (e) => {
   e.preventDefault();
 
   const score = {
-    score: mostRecentScore,
-    name: username.value,
+    score: latestScore,
+    name: player.value,
   };
   topScores.push(score);
 /*  this line  below :72 the .sort a,b => b.score - a.score was taken directly from you tube video (see readme) */

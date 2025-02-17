@@ -111,7 +111,7 @@ const beginGame = () => {
 // function to check if questions bank has been used
 const getNewQuestion = () => {
   if (selectedQuestions.length === 0 || questionCounter >= totalQuestions) {
-    localStorage.setItem("mostRecentScore", score);
+    localStorage.setItem("latestScore", score);
     return document.location.assign("final.html");
 
     // part of function to monitor progress and set random question allocator using math.floor
