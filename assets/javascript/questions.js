@@ -9,7 +9,7 @@ const progressBarFull = document.getElementById("progressBarFull");
 let currentQuestion = {};
 let acceptingAnswers = false;
 let questionCounter = 0;
-let availableQuestions = [];
+let selectedQuestions = [];
 let score = 0;
 
 let questions = [
@@ -96,29 +96,31 @@ let questions = [
     answer: 1,
   },
 ];
-
-const MAX_QUESTIONS = 10;
+/*  camel case used for const variable after research to show that if desired the question length / number
+of questions can be altered, whereas with capitals and _  TOTAL_QUESTIONS it shows that it's designed to stay 
+the same */
+const totalQuestions = 10;
 // function to start game taking available questions from questions array
-const startGame = () => {
+const beginGame = () => {
   questionCounter = 0;
   score = 0;
-  availableQuestions = [...questions];
+  selectedQuestions = [...questions];
   getNewQuestion();
 };
 
 // function to check if questions bank has been used
 const getNewQuestion = () => {
-  if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+  if (selectedQuestions.length === 0 || questionCounter >= totalQuestions) {
     localStorage.setItem("mostRecentScore", score);
     return document.location.assign("final.html");
 
     // part of function to monitor progress and set random question allocator using math.floor
   }
   questionCounter++;
-  progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
-  progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
-  const questionIndex = Math.floor(Math.random() * availableQuestions.length);
-  currentQuestion = availableQuestions[questionIndex];
+  progressText.innerText = `Question ${questionCounter}/${totalQuestions}`;
+  progressBarFull.style.width = `${(questionCounter / totalQuestions) * 100}%`;
+  const questionIndex = Math.floor(Math.random() * selectedQuestions.length);
+  currentQuestion = selectedQuestions[questionIndex];
   question.innerText = currentQuestion.question;
 
   // code to call next question using splice to prevent any question being re used
@@ -128,7 +130,7 @@ const getNewQuestion = () => {
     choice.innerText = currentQuestion["choice" + number];
   });
 
-  availableQuestions.splice(questionIndex, 1);
+  selectedQuestions.splice(questionIndex, 1);
   acceptingAnswers = true;
 };
 
@@ -166,4 +168,4 @@ const incrementScore = (num) => {
   scoreText.innerText = score;
 };
 
-startGame();
+beginGame();

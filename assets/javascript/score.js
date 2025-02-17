@@ -7,7 +7,6 @@ const messageElement = document.getElementById("message");
 const mostRecentScore = localStorage.getItem("mostRecentScore");
 
 const topScores = JSON.parse(localStorage.getItem("topScores")) || [];
-const MAX_HIGH_SCORES = 10;
 
 // function to display final score
 
