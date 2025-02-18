@@ -77,6 +77,7 @@ The surface layer ensures the quiz is **visually appealing and user-friendly**:
 - **Fun final score display** adds excitement and encourages replayability.  
 
 By structuring the project using the **Five Planes of UX Design**, the quiz delivers an **intuitive, accessible, and enjoyable** experience for all users.
+[Back to Top](#top)
 
 # Design
   - I initally used Balsamiq to create a skeleton idea for each page of the site.
@@ -99,6 +100,7 @@ By structuring the project using the **Five Planes of UX Design**, the quiz deli
 
 
   ![Alt text](assets/images/Screenshot%202025-02-17%20155636.png)
+[Back to Top](#top)
 
 # Content
 
@@ -141,10 +143,78 @@ Here is a list of all the content in the project with detailed desciptions as to
 
 - Score page
 
-  - 
+  - The Score page has the word "Score" centred in big letters with the result as a number underneath to let the player know how they have done.
+  - There is then a text input box with the word "player" in the middle where the player has the option to save their score by entereing their name.
+  - Under the text input area are three button:
+    - Save
+       To allow the player to save their score if it is in the last 5 saved scores.
+    - Play Again
+       To allow the player to return directly to the first question and play the game again.
+    - Home
+       To allow the player to return diretly to the home page.
+
+
+
+![Alt text](assets/images/Screenshot%202025-02-16%20213014.png)
+
+  - There is also a 2nd page for Score that if the player has scored 10 out of 10, the whole background lights up bright green
+
+![Alt text](assets/images/Screenshot%202025-02-16%20213138.png)
+
+
+
+- Top Scores
+  - The Top scores page has in big bold purple letters the words "Top Scores" with the names of up to 5 players who have saved their scores with a dash between their name and their score.
+  - Under the names and scores are the buttons:
+    - Home
+      - This like with the other pages takes the player directly back to the home page.
+    - Clear Top Scores
+      - This will clear the top scores and a pop up alert will advise the player that this has been done successfully.
+    - Play Again
+      - This like with the other pages will take the player directly back to the first question to play the game again.
+
+![Alt text](assets/images/Screenshot%202025-02-16%20213035.png)
+
+[Back to Top](#top)
+
+
+# Development
+  - In the build up to this project as I was going through the final stages of the Javascipt element of the course I had the idea to build golf crazy putting game, but I was unalbe to find the appropriate images to make this work as I had in mind. I noticed that from an example project that we were given to look at that the person had built a World Quiz, and that they had said that they had used videos on you tube to help build them, so I deicded that I would make my own version of a quiz.
+    -  The general challenge I have faced is knowing lots of individual segments of code and what they do, but having difficulty in knowing how to piece them all together to create a functinal programme.
+    - The first challenge I had was making the question large enough to be read on very large screens and clearly visible for very small screens so adopting the mobile first strategy, but being able to fit all the details on the screen. This was solved by creating a top margin so that even on small mobile devices everything can be seen easily.
+    - The 2nd challenge was after a >empty< being picked up in html validate and adding a 0 as an iniator for the start of the score it changed the space layout causing a problem with the progress bar. I tried several times myself using dev tools to solve this but couldn't do it. After mentioning this to my mentor he pointed out the overflow hidden function in CSS and advised me to change the inner radius to 0 to create a vertical line within the bar.
+    - It was while watching you tube videos for insparation to adittional features that I saw someone had created an effect to let a player know when they had done well. This gave me the idea of changing the background color if all questions had been answered correctly and being able to build it in with the if else statement that I was determined to use giving feedback as to the result.
+
+# Features
+
+  - The project has been designed like the first one over several pages to give a better user experience, with simple easy to use navigational tabs instead of an actula navigation bar which I feel would be incombersome to this type of site / app.
+  - There is a significant difference in text / font styling throughout, which is deliberate to focus the players attention on the important parts. The text displaying the question number is small as the questions themselves are the important part, text inside the answer boxes clear but not obstructing the outer contaner they are in.
+  - A "Home" button on all pages allowing the player to return to the home screen at all times.
+  - A bright green background on the "Score" page if the player has got all 10 questions correct.
+  - Within the question.js file I have used camel case instead of CAPTIALS and _ with setting the const variable for the total number of questions. This after some research I learnt tells another developer that while the questions are a constant they can be changed and re coded if it is felt that more or less questions would be of benefit. 
+
+# Future
+- I would like to desing the game so that there are multiple types of quizes of different lengths and difficulties available using an internal API to store the data and an exteranl API to build a feature where the player enters text that is linked to an exteranl site to validate responses.
+
+# Technology Used
+  - HTML
+  - CSS
+  - JavaScript
+  - HTML Validator
+  - CSS Validator
+  - JS Hint
+  - Lighthouse
+  - Chat GPT for generl advice of specific code segments.
+  - You Tube, in particular one series of videos as a general guide [Quick quiz app](https://youtube.com/playlist?list=PLB6wlEeCDJ5Yyh6P2N6Q_9JijB6v4UejF&feature=shared)
+[Back to Top](#top)
+
+# Testing
+  - I used dev tools and 'inspect' on the preview page to test at first point how the project looked on a small screen simulating various mobile devices and then more widely for devices such as I pad's, tablets, laptop's and then by entereing pixel sizes into dev tools large and very large screens as a first stage.
+  - I later tested the site for usability on my own personal phone as well as my own I pad to simulate different screen sizes in a 'real world' environment.
+  - Finally, I connected my laptop to a 2nd screen to see how the site performs on a large screen.
 
   
-# Features and Functionality Table
+# Functionality Table
 
 | Page / Function           | Feature / Functionality                                      | Expected Outcome                                      | Actual Outcome |
 |--------------------------|------------------------------------------------|--------------------------------------------------|----------------|
@@ -166,3 +236,127 @@ Here is a list of all the content in the project with detailed desciptions as to
 |                          | Delete Scores Button                           | Clears stored scores and resets leaderboard.    | [Passed] |
 |                          | Return to Home Button                          | Navigates back to the Home Page.                | [Passed] |
 
+[Back to Top](#top)
+
+# Validation
+
+  - I used HTML and CSS validate along with JS Hint as well as Lighthouse performance validates.
+    - HTML validate
+      - Home (indes) page
+
+![Alt text](assets/images/Screenshot%202025-02-16%20213539.png)
+
+      - Questions page
+
+
+![Alt text](assets/images/Screenshot%202025-02-16%20213638.png)
+
+      - Score page
+
+
+![Alt text](assets/images/Screenshot%202025-02-16%20213719.png)
+
+      - Top Scores page
+
+
+![Alt text](assets/images/Screenshot%202025-02-16%20213814.png)
+
+    - CSS validate
+      - index.css
+
+
+![Alt text](assets/images/Screenshot%202025-02-16%20213913.png)
+
+      - questions.css
+
+
+![Alt text](assets/images/Screenshot%202025-02-16%20213941.png)
+
+      - topscores.css
+
+
+![Alt text](assets/images/Screenshot%202025-02-16%20214009.png)
+
+    - JS Hint validate
+      - questions.js
+
+
+![Alt text](assets/images/Screenshot%202025-02-16%20214134.png)
+
+      - score.js
+
+
+![Alt text](assets/images/Screenshot%202025-02-16%20214305.png)
+
+      - topscores.js
+
+
+![Alt text](assets/images/Screenshot%202025-02-17%20144342.png)
+
+  
+    - Lighthouse validate
+      - Home (index) page
+
+
+![Alt text](assets/images/Screenshot%202025-02-16%20212528.png)
+
+      - Questions page
+
+
+![Alt text](assets/images/Screenshot%202025-02-16%20212625.png)
+
+      - Scores page
+
+
+![Alt text](assets/images/Screenshot%202025-02-16%20212745.png)
+
+      - Max Scores page (10 / 10)
+
+
+![Alt text](assets/images/Screenshot%202025-02-16%20213216.png)
+
+      - Top Scores page
+
+
+![Alt text](assets/images/Screenshot%202025-02-16%20212837.png)
+[Back to Top](#top)
+
+
+# Deployment
+  - To deploy my project I used GitHub pages by committing and pushing the project from Visual Studio Code to [Git Hub](https://github.com/).
+  - This is done by entering in the terminal in Visual Studio Code:
+    - git add .
+    - git commit -m "enter commit message here"
+    - git push
+  - To publish the webiste to be avialable to all.
+    - Select repository from [GitHub](https://github.com/).
+    - Select "Settings" on the top title bar.
+    - Select "Pages".
+    - Choose "Deploy from a branch" in source under "Build and deployment.
+    - "main" and "root" under "Branch" and click "save".
+    - Return to home page and refresh page and wait a few minutes then look for "Deployments" midway down the right hand side of repository page.
+    - This will take you to "github-pages deployments" at top of page, simply click on the highlighted link in the github-pages boxed section. This link can copied and pasted to be sent to other people or used manually if needed on any other device.
+
+
+# Forking
+  - To fork the project follow these steps:
+    - Open [GitHub](https://github.com/)
+    - Click on the desired project to be forked.
+    - Find the'Fork' button to the top right of the page.
+    - Click the button and the fork will be in your respository.
+
+# Cloning
+  - To clone the project follow these steps:
+    - Open [GitHub](https://github.com/)
+    - Click on the desired project to be cloned.
+    - You will be provided with three options from which to choose, HTTPS, SSH or GitHub, click the clipboard icon in order to copy the URL.
+    - When you have clicked the button the fork will be in your repository.
+    - Open a new terminal.
+    - Change the current working directory to the location where you want the cloned directory.
+    - Type 'git clone' and paste the URL from the third step.
+    - Press 'Enter' and the project is cloned.
+
+# Credits
+  - A big thank you to my mentor and general tips and advice from fellow students and interview videos with assesors.
+  - Various you tube videos for general visual tips.
+  [Back to Top](#top)
