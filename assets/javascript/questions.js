@@ -105,11 +105,11 @@ const beginGame = () => {
   questionCounter = 0;
   score = 0;
   selectedQuestions = [...questions];
-  getNewQuestion();
+  getNextQuestion();
 };
 
 // function to check if questions bank has been used
-const getNewQuestion = () => {
+const getNextQuestion = () => {
   if (selectedQuestions.length === 0 || questionCounter >= totalQuestions) {
     localStorage.setItem("latestScore", score);
     return document.location.assign("final.html");
@@ -156,7 +156,7 @@ choices.forEach((choice) => {
 
     setTimeout(() => {
       selectedChoice.parentElement.classList.remove(classToApply);
-      getNewQuestion();
+      getNextQuestion();
     }, 500);
   });
 });
