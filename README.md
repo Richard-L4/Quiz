@@ -203,7 +203,7 @@ Here is a list of all the content in the project with detailed descriptions as t
   - JS Hint
   - Lighthouse
   - Chat GPT for generl advice of specific code segments.
-  - You Tube, in particular one series of videos as a general guide [Quick quiz app](https://youtube.com/playlist?list=PLB6wlEeCDJ5Yyh6P2N6Q_9JijB6v4UejF&feature=shared)
+  - You Tube videos as a general guide [How to make a quiz app](https://www.youtube.com/watch?v=PBcqGxrr9g8&t=1851s) / [Quick quiz app](https://youtube.com/playlist?list=PLB6wlEeCDJ5Yyh6P2N6Q_9JijB6v4UejF&feature=shared) / 
 [Back to Top](#top)
 
 # Testing
