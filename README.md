@@ -241,7 +241,7 @@ Here is a list of all the content in the project with detailed descriptions as t
 
 # Validation
 
-  - I used HTML and CSS validate along with JS Hint as well as Lighthouse performance validates.
+  - I used HTML and CSS validate along with JS Hint as well as Lighthouse performance validates. I also have put the readme document through Microsoft Word spell check.
     - HTML validate
       - Home (indes) page
 
