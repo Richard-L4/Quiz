@@ -182,6 +182,8 @@ Here is a list of all the content in the project with detailed descriptions as t
     - The first challenge I had was making the question large enough to be read on very large screens and clearly visible for very small screens so adopting the mobile first strategy, but being able to fit all the details on the screen. This was solved by creating a top margin so that even on small mobile devices everything can be seen easily.
     - The 2nd challenge was after a >empty< being picked up in html validate and adding a 0 as an initiator for the start of the score it changed the space layout causing a problem with the progress bar. I tried several times myself using dev tools to solve this but couldn't do it. After mentioning this to my mentor he pointed out the overflow hidden function in CSS and advised me to change the inner radius to 0 to create a vertical line within the bar.
     - It was while watching you tube videos for inspiration to aditional features that I saw someone had created an effect to let a player know when they had done well. This gave me the idea of changing the background colour if all questions had been answered correctly and being able to build it in with the if else statement that I was determined to use giving feedback as to the result.
+    - I also faced an issue of when trying to de bug a section of code I somehow managed to to initiate a rebase that lead to me loosing all the work from VSC. I had a stressful half hour pulling it all back from GitHub and finding out what to put in the terminal to clear the working tree but not pushing anything new up to GitHub.
+    - Unfortunately, the feedback from PP1 didn't arrive soon enough for me implement the suggestions regarding the specificity of commit comments. This is something I will endeavour to address in the future.
 
 # Features
 
@@ -357,5 +359,6 @@ Here is a list of all the content in the project with detailed descriptions as t
 
 # Credits
   - A big thank you to my mentor and general tips and advice from fellow students and interview videos with assesors.
-  - Various you tube videos for general visual tips.
+  - Various you tube videos for general visual tips [How to make a quiz app](https://www.youtube.com/watch?v=PBcqGxrr9g8&t=1851s) / [Build a Quiz app](https://www.youtube.com/watch?v=_FnFPmA87XU) / [Quick quiz app](https://youtube.com/playlist?list=PLB6wlEeCDJ5Yyh6P2N6Q_9JijB6v4UejF&feature=shared)
+
   [Back to Top](#top)
