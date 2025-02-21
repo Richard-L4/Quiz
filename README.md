@@ -157,7 +157,7 @@ Here is a list of all the content in the project with detailed descriptions as t
 
   - There is also a 2nd page for Score that if the player has scored 10 out of 10, the whole background lights up bright green
 
-![Alt text](assets/images/Screenshot%202025-02-16%20213138.png)
+![Alt text](assets/images/Screenshot%202025-02-21%20134353.png)
 
 
 
