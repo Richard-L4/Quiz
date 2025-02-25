@@ -63,14 +63,13 @@ const saveTopScore = (e) => {
   e.preventDefault();
 
   // Check if the player has entered a name
-   
 
   if (!player.value.trim()) {
     // Use SweetAlert to show the alert
     Swal.fire({
-      icon: 'warning',
-      title: 'Oops!',
-      text: 'Please enter your call sign before saving your score.',
+      icon: "warning",
+      title: "Oops!",
+      text: "Please enter your call sign before saving your score.",
     });
     return; // Stop the function from executing further if no name is entered
   }
