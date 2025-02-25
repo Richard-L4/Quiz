@@ -68,8 +68,8 @@ const saveTopScore = (e) => {
     // Use SweetAlert to show the alert
     Swal.fire({
       icon: "warning",
-      title: "Oops!",
-      text: "Please enter your call sign before saving your score.",
+      title: "Doh!",
+      text: "Please enter somthing before saving your score.",
     });
     return; // Stop the function from executing further if no name is entered
   }
