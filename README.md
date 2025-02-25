@@ -153,7 +153,11 @@ Here is a list of all the content in the project with detailed descriptions as t
 
 
 
-![Alt text](assets/images/Screenshot%202025-02-16%20213014.png)
+![Alt text](assets/images/Screenshot%202025-02-25%20190337.png)
+
+  - There is an alert if a player tries to use the save button without having saved anything with the message "Doh" which is a play on the old Simpsons phrase. Anything is allowed to be saved; numbers, symbols, letters etc.
+
+![Alt text](assets/images/Screenshot%202025-02-25%20190359.png)
 
   - There is also a 2nd page for Score that if the player has scored 10 out of 10, the whole background lights up bright green
 
