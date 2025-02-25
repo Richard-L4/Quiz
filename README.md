@@ -1,7 +1,7 @@
 # Quiz
 This project is a simple quiz with ten randomly generated questions. Questions advance automatically, leading to a final score page where players can enter their name. The layout is optimized for small screens, with four clear answer choices, a question tracker, a score counter, and a fun progress bar. The home page features buttons to start the game or view the top five recent scores, which can be deleted if desired. Players can return to the home page from any page, ensuring a smooth user experience, especially if they want to restart the quiz.
 
-![Alt text](assets/images/Screenshot%202025-02-16%20213411.png)
+![Alt text](assets/images/Screenshot-of-project.png)
 
 ## UX (User Experience)
 
@@ -81,23 +81,23 @@ By structuring the project using the **Five Planes of UX Design**, the quiz deli
   - I initially used Balsamiq to create a skeleton idea for each page of the site.
   - This wireframe is of the "Home" index.html page.
 
-  ![Alt text](assets/images/Screenshot%202025-02-17%20154622.png)
+  ![Alt text](assets/images/Screenshot-of-home-wireframe.png)
 
 
   - This wireframe is of the "Questions" questions.html page.
 
-   ![Alt text](assets/images/Screenshot%202025-02-17%20155101.png)
+   ![Alt text](assets/images/Screenshot-of-questions-wireframe.png)
 
 
   - This wireframe is of the "Final" final.html page where the scores are displayed.
 
-  ![Alt text](assets/images/Screenshot%202025-02-17%20155451.png)
+  ![Alt text](assets/images/Screenshot-of-final-wireframe.png)
 
 
   - This wireframe is of the "Top Scores" topscores.html page where the top five highest scores are displayed.
 
 
-  ![Alt text](assets/images/Screenshot%202025-02-17%20155636.png)
+  ![Alt text](assets/images/Screenshot-of-topscores-wireframe.png)
 [Back to Top](#top)
 
 # Content
@@ -107,7 +107,7 @@ Here is a list of all the content in the project with detailed descriptions as t
 - Home page
 
 
- ![Alt text](assets/images/Screenshot%202025-02-16%20212927.png)
+ ![Alt text](assets/images/Screenshot-of-home-page.png)
 
 
 
@@ -137,7 +137,7 @@ Here is a list of all the content in the project with detailed descriptions as t
 
 
 
-![Alt text](assets/images/Screenshot%202025-02-16%20212941.png)
+![Alt text](assets/images/Screenshot-of-questions-page.png)
 
 - Score page
 
@@ -153,15 +153,15 @@ Here is a list of all the content in the project with detailed descriptions as t
 
 
 
-![Alt text](assets/images/Screenshot%202025-02-25%20190337.png)
+![Alt text](assets/images/Screenshot-of-scores-page.png)
 
   - There is an alert if a player tries to use the save button without having saved anything with the message "Doh" which is a play on the old Simpsons phrase. Anything is allowed to be saved; numbers, symbols, letters etc.
 
-![Alt text](assets/images/Screenshot%202025-02-25%20190359.png)
+![Alt text](assets/images/Screenshot-of-scores-page-2.png)
 
   - There is also a 2nd page for Score that if the player has scored 10 out of 10, the whole background lights up bright green
 
-![Alt text](assets/images/Screenshot%202025-02-21%20134353.png)
+![Alt text](assets/images/Screenshot-scores-expert-page.png)
 
 
 
@@ -175,7 +175,7 @@ Here is a list of all the content in the project with detailed descriptions as t
     - Play Again
       - This like with the other pages will take the player directly back to the first question to play the game again.
 
-![Alt text](assets/images/Screenshot%202025-02-16%20213035.png)
+![Alt text](assets/images/Screenshot-of-top-scores-page.png)
 
 [Back to Top](#top)
 
@@ -248,81 +248,81 @@ Here is a list of all the content in the project with detailed descriptions as t
     - HTML validate
       - Home (indes) page
 
-![Alt text](assets/images/Screenshot%202025-02-16%20213539.png)
+![Alt text](assets/images/Screenshot-of-index-val.png)
 
       - Questions page
 
 
-![Alt text](assets/images/Screenshot%202025-02-16%20213638.png)
+![Alt text](assets/images/Screenshot-of-questions-val.png)
 
       - Score page
 
 
-![Alt text](assets/images/Screenshot%202025-02-16%20213719.png)
+![Alt text](assets/images/Screenshot-of-score.val.png)
 
       - Top Scores page
 
 
-![Alt text](assets/images/Screenshot%202025-02-16%20213814.png)
+![Alt text](assets/images/Screenshot-of-top-scores-val.png)
 
     - CSS validate
       - index.css
 
 
-![Alt text](assets/images/Screenshot%202025-02-16%20213913.png)
+![Alt text](assets/images/Screenshot-of-index-css-val.png)
 
       - questions.css
 
 
-![Alt text](assets/images/Screenshot%202025-02-16%20213941.png)
+![Alt text](assets/images/Screenshot-of-questions.css-val.png)
 
       - topscores.css
 
 
-![Alt text](assets/images/Screenshot%202025-02-16%20214009.png)
+![Alt text](assets/images/Screenshot-of-top-scores-css-val.png)
 
     - JS Hint validate
       - questions.js
 
 
-![Alt text](assets/images/Screenshot%202025-02-16%20214134.png)
+![Alt text](assets/images/Screenshot-questions-js-hint.png)
 
       - score.js
 
 
-![Alt text](assets/images/Screenshot%202025-02-16%20214305.png)
+![Alt text](assets/images/Screenshot-of-score-js-hint.png)
 
       - topscores.js
 
 
-![Alt text](assets/images/Screenshot%202025-02-17%20144342.png)
+![Alt text](assets/images/Screenshot-of-topscores-js-hint.png)
 
   
     - Lighthouse validate
       - Home (index) page
 
 
-![Alt text](assets/images/Screenshot%202025-02-16%20212528.png)
+![Alt text](assets/images/Screenshot-of-lighthouse-check.png)
 
       - Questions page
 
 
-![Alt text](assets/images/Screenshot%202025-02-16%20212625.png)
+![Alt text](assets/images/Screenshot-of-lighthouse-check-2.png)
 
       - Scores page
 
 
-![Alt text](assets/images/Screenshot%202025-02-16%20212745.png)
+![Alt text](assets/images/Screenshot-of-lighthouse-check-3.png)
 
       - Max Scores page (10 / 10)
 
 
-![Alt text](assets/images/Screenshot%202025-02-16%20213216.png)
+![Alt text](assets/images/Screenshot-of-lighthouse-check-4.png)
 
       - Top Scores page
 
 
-![Alt text](assets/images/Screenshot%202025-02-16%20212837.png)
+![Alt text](assets/images/Screenshot-of-lighthouse-check-5.png)
 [Back to Top](#top)
 
 
