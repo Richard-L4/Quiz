@@ -99,6 +99,14 @@ h3 {
   box-shadow: none;
   transform: none;
 }
+/* styles for play and top Scores buttons on home page and home page on other pages */
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.625rem;
+}
+
 /*  style for form box to enter user name for high scores */
 form {
   width: 100%;
