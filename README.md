@@ -141,7 +141,7 @@ Here is a list of all the content in the project with detailed descriptions as t
 
 - Score page
 
-  - The Score page has the word "Score" centred in big letters with the result as a number underneath to let the player know how they have done.
+  - The Score page has the "Score" centred as a big number to let the player know how they have done.
   - There is then a text input box with the word "player" in the middle where the player has the option to save their score by entering their name.
   - Under the text input area are three button:
     - Save
@@ -181,7 +181,7 @@ Here is a list of all the content in the project with detailed descriptions as t
 
 
 # Development
-  - In the build up to this project as I was going through the final stages of the Javascipt element of the course I had the idea to build golf crazy putting game, but I was unable to find the appropriate images to make this work as I had in mind. I noticed that from an example project that we were given to look at that the person had built a World Quiz, and that they had said that they had used videos on you tube to help build them, so I decided that I would make my own version of a quiz.
+  - In the build up to this project as I was going through the final stages of the Javascipt element of the course I had the idea to build golf crazy putting game, but I was unable to find the appropriate images to make this work as I had in mind. I noticed that from an example project that we were given to look at that the person had built a geography based quiz, and that they had said that they had used videos on you tube to help build them, so I decided that I would make my own version of a quiz.
     -  The general challenge I have faced is knowing lots of individual segments of code and what they do, but having difficulty in knowing how to piece them all together to create a functional programme.
     - The first challenge I had was making the question large enough to be read on very large screens and clearly visible for very small screens so adopting the mobile first strategy, but being able to fit all the details on the screen. This was solved by creating a top margin so that even on small mobile devices everything can be seen easily.
     - The 2nd challenge was after a >empty< being picked up in html validate and adding a 0 as an initiator for the start of the score it changed the space layout causing a problem with the progress bar. I tried several times myself using dev tools to solve this but couldn't do it. After mentioning this to my mentor he pointed out the overflow hidden function in CSS and advised me to change the inner radius to 0 to create a vertical line within the bar.
