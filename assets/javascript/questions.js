@@ -96,9 +96,11 @@ let questions = [
     answer: 1,
   },
 ];
+
 /*  camel case used for const variable after research to show that if desired the question length / number
 of questions can be altered, whereas with capitals and _  TOTAL_QUESTIONS it shows that it's designed to stay 
 the same */
+
 const totalQuestions = 10;
 
 // function to start game taking available questions from questions array

@@ -19,6 +19,7 @@ topScoresList.innerHTML = topScores
   .join("");
 
 // Add event listener for "Clear High Scores" button
+
 const clearScoresBtn = document.getElementById("clearScoresBtn");
 
 clearScoresBtn.addEventListener("click", () => {

@@ -49,6 +49,7 @@ function displayFinalScore() {
 }
 
 // Call function when page loads using event listener and key up
+
 displayFinalScore();
 
 /**
@@ -72,7 +73,9 @@ const saveTopScore = (e) => {
   // Check if the player has entered a name
 
   if (!player.value.trim()) {
+
     // Use SweetAlert to show the alert
+    
     Swal.fire({
       icon: "warning",
       title: "Doh!",
