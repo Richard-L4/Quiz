@@ -51,6 +51,13 @@ function displayFinalScore() {
 // Call function when page loads using event listener and key up
 displayFinalScore();
 
+/**
+ * Enables or disables the save score button based on player input.
+ *
+ * @param {HTMLElement} player - The input field where the player enters their name.
+ * @param {HTMLElement} saveScoreBtn - The button to save the score.
+ */
+
 player.addEventListener("keyup", () => {
   saveScoreBtn.disabled = !player.value;
 });

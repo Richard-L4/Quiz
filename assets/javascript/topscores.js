@@ -5,6 +5,13 @@ const topScores = JSON.parse(localStorage.getItem("topScores")) || [];
 
 // .map used to take recent top scores and create list of names and scores using template literal
 
+/**
+ * Updates the leaderboard display with the top scores.
+ *
+ * @param {HTMLElement} topScoresList - The list element where top scores are displayed.
+ * @param {Array<{name: string, score: number}>} topScores - An array of top score objects.
+ */
+
 topScoresList.innerHTML = topScores
   .map((score) => {
     return `<li class="top-score">${score.name} - ${score.score}</li>`;

@@ -100,7 +100,9 @@ let questions = [
 of questions can be altered, whereas with capitals and _  TOTAL_QUESTIONS it shows that it's designed to stay 
 the same */
 const totalQuestions = 10;
+
 // function to start game taking available questions from questions array
+
 const beginGame = () => {
   questionCounter = 0;
   score = 0;
@@ -109,6 +111,7 @@ const beginGame = () => {
 };
 
 // function to check if questions bank has been used
+
 const getNextQuestion = () => {
   if (selectedQuestions.length === 0 || questionCounter >= totalQuestions) {
     localStorage.setItem("latestScore", score);
@@ -123,7 +126,13 @@ const getNextQuestion = () => {
   currentQuestion = selectedQuestions[questionIndex];
   question.innerText = currentQuestion.question;
 
-  // code to call next question using splice to prevent any question being re used
+// code to call next question using splice to prevent any question being re used
+  /**
+ * Updates the text of each choice element based on the current question.
+ *
+ * @param {NodeListOf<Element>} choices - The list of choice elements.
+ * @param {Object} currentQuestion - The current question object containing answer choices.
+ */
 
   choices.forEach((choice) => {
     const number = choice.dataset.number;
@@ -135,6 +144,13 @@ const getNextQuestion = () => {
 };
 
 // section to to check and display answers incorrect or correct using event listeners and terinary operator
+/**
+ * Adds a click event listener to each choice element.
+ *
+ * @param {NodeListOf<Element>} choices - The list of choice elements.
+ * @param {boolean} acceptingAnswers - A flag indicating whether answers can be accepted.
+ * @param {Object} currentQuestion - The current question object containing the correct answer.
+ */
 
 choices.forEach((choice) => {
   choice.addEventListener("click", (e) => {
@@ -162,6 +178,11 @@ choices.forEach((choice) => {
 });
 
 // function to increment score
+/**
+ * Increments the player's score and updates the score display.
+ *
+ * @param {number} num - The number of points to add to the score.
+ */
 
 const incrementScore = (num) => {
   score += num;
